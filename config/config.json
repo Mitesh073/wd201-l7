@@ -9,12 +9,19 @@
   "test": {
     "username": "postgres",
     "password": "postgres",
+    "logging": false,
     "database": "wd-todo-test",
     "host": "127.0.0.1",
     "dialect": "postgres"
-    },
+  },
   "production": {
     "use_env_variable": "DATABASE_URL",
-    "dialect": "postgres"
+    "dialect": "postgres",
+    "dialectOptions": {
+      "ssl": {
+        "require": true,
+        "rejectUnauthorized": false
       }
     }
+  }
+}
