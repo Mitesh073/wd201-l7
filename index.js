@@ -1,9 +1,5 @@
 const app = require("./app");
-let port = 3000;
-if (typeof process.env.PORT !== "undefined") {
-  port = process.env.PORT;
-}
-
+const port = process.env.PORT || 3000;
 app.listen(port, () => {
-  console.log("Started express server at port " + port);
+  console.log(`server listening at port - ${port}`);
 });
