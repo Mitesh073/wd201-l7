@@ -2,15 +2,14 @@
   "development": {
     "username": "postgres",
     "password": "password",
-    "database": "wd-todo-dev",
+    "database": "todo_db_express",
     "host": "127.0.0.1",
     "dialect": "postgres"
   },
   "test": {
     "username": "postgres",
     "password": "password",
-    "logging": false,
-    "database": "wd-todo-test",
+    "database": "todo_db_express_test",
     "host": "127.0.0.1",
     "dialect": "postgres"
   },
